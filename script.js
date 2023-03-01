@@ -10,8 +10,12 @@ const overlay = document.querySelector(".overlay");
 // Funciones para mostrar y ocultar modales (quitado o añadiendo la clase hidden):
 const openModal = function (e) {
   console.log(e, e.target);
-  modal.classList.remove("hidden");
-  overlay.classList.remove("hidden");
+  if (e.target.classList.contains("show-modal")) {
+    modal.classList.remove("hidden");
+    overlay.classList.remove("hidden");
+  }
+  // modal.classList.remove("hidden");
+  // overlay.classList.remove("hidden");
 };
 
 const closeModal = function () {
