@@ -4,7 +4,7 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "scp -P 22123 -r /home/alumno/Escritorio/Javascript/Codigo/ventanas-modalesss-guishermu/* guille@guille.certweb.infenlaces.com:/home/guille/guillephp/sitiophp/ventanas-modalesss-guishermu/"
   },
   "author": "",
   "license": "ISC",
